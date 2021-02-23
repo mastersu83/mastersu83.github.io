@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'ProximaNova_reg';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova_bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Bold.woff') format('woff'),
+    url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.reg() {
+  font-family: ProximaNova_reg, sans-serif;
+}
+
+.bold() {
+  font-family: ProximaNova_bold, sans-serif;
+}
+
+body {
+  .reg()
+}
+
+
 /* colors */
 @btn-color: #fcb303;
 @icon-color: #46b814;
@@ -17,7 +52,7 @@ section {
 }
 
 /* main */
-main {
+.main {
   padding: 3rem 0;
 }
 
@@ -26,21 +61,22 @@ main {
 }
 
 .button {
-  background-color: @btn-color;
-  color: @light;
   padding: 1rem 3rem;
   border-radius: 8px;
+  font-size: 1.2rem;
+  background-color: @btn-color;
+  color: @light;
   text-transform: uppercase;
   border: none;
 }
 
 .phone-link {
   display: inline-block;
-  color: @text;
-  font-weight: 800;
-  font-size: 1.7rem;
+  .bold();
+  font-size: 2rem;
   height: 7rem;
   line-height: 7rem;
+  color: @text;
 }
 
 .wrap {
