@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+}
+
+.header {
+  background: black;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar {
+  padding-left: 1050px;
+}
+
+.navbar_menu {
+  display: inline-block;
+  color: white;
+  padding: 16px 10px;
+}
+
+.text {
+  padding-top: 50.4px;
+}
