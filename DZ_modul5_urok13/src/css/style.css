@@ -5,7 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'ProximaNova_bold';
   src: url('../fonts/ProximaNova-Bold.eot');
@@ -13,31 +12,106 @@
   font-weight: bold;
   font-style: normal;
 }
-
-body {
-  font-family: ProximaNova_reg, sans-serif;
-}
-
 /* colors */
 /* Basic settings */
 html {
-  font-size: 11px;
+  font-size: 10px;
 }
-
-/* Tipography */
-section {
-  padding: 10rem 0;
+body {
+  font-family: ProximaNova_reg, sans-serif;
 }
-
 /* main */
 .main {
   padding: 3rem 0;
+  background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
+  background-size: cover;
+  /*заголовок*/
+  /*зеленый ярлык*/
+  /*оплата по факту*/
+  /*главная форма*/
 }
-
+.main-content {
+  margin-top: 10rem;
+  /*главный заголовок*/
+}
+.main-content h1 {
+  margin-bottom: 4rem;
+  font-family: ProximaNova_bold, sans-serif;
+  line-height: 1.45;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.main-subtitle {
+  margin-bottom: 4rem;
+  font-size: 2.1rem;
+}
+.main span {
+  display: inline-block;
+  padding: 3rem 5rem;
+  background-color: #46b814;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-align: center;
+  /*цифра 300*/
+}
+.main span strong {
+  font-size: 3rem;
+  font-family: ProximaNova_bold, sans-serif;
+}
+.main-trigger {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-family: ProximaNova_bold, sans-serif;
+  display: block;
+  margin-top: 3rem;
+}
+.main-form {
+  background-color: #ffffff;
+  padding: 4rem 5rem;
+  text-align: center;
+  /*заголовок формы*/
+  /*поле для ввода*/
+  /*подписи к полям*/
+}
+.main-form-header {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+.main-form-header strong {
+  font-size: 1.9rem;
+}
+.main-form-input {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 1.7rem;
+}
+.main-form label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  background-color: #ffffff;
+  font-size: 1.3rem;
+}
+.main-form-btn {
+  font-size: 1.6rem;
+  height: 5.5rem;
+  width: 100%;
+}
+.main-form small {
+  display: block;
+  margin-top: 1.5rem;
+}
+.main .footer {
+  text-align-last: left;
+}
 .header {
   height: 7rem;
 }
-
 .button {
   padding: 1rem 3rem;
   border-radius: 8px;
@@ -47,7 +121,9 @@ section {
   text-transform: uppercase;
   border: none;
 }
-
+.phone-block {
+  text-align: right;
+}
 .phone-link {
   display: inline-block;
   font-family: ProximaNova_bold, sans-serif;
@@ -56,14 +132,13 @@ section {
   line-height: 7rem;
   color: #1a1820;
 }
-
 .wrap {
   display: table;
   width: 100%;
   height: 7rem;
 }
-
 .wrap-block {
   display: table-cell;
   vertical-align: middle;
+  text-align: right;
 }
