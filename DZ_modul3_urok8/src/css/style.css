@@ -1,0 +1,16 @@
+h1 {
+  margin-top: 30px;
+  margin-bottom: 122px;
+}
+
+.col-xs-12,
+.col-sm-6,
+.col-md-4,
+.col-lg-2 {
+  height: 199px;
+}
+
+.advantage {
+  height: 136px;
+  margin-bottom: 31px;
+}
