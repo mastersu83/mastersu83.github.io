@@ -1,0 +1,35 @@
+.header {
+	font-size: 24px;
+	line-height: 1.5;
+	margin: 60px auto;
+}
+.header span {
+	display: block;
+}
+.section {
+	padding: 30px 0;
+}
+.form {
+	border: 5px solid #2727d9;
+	padding: 35px 20px;
+}
+.form input {
+	margin-bottom: 12px;
+}
+.form-header,
+.section-header {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 900;
+}
+.form-btn {
+	background-color: #2727d9;
+	margin: 10px auto;
+}
+.section-header {
+	margin-bottom: 85px;
+	margin-top: 85px;
+}
+.advantage {
+	margin-bottom: 20px;
+}
