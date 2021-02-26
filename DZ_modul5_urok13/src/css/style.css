@@ -20,6 +20,14 @@ html {
 body {
   font-family: ProximaNova_reg, sans-serif;
 }
+a:hover {
+  text-decoration: none;
+}
+button:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
 /* main */
 .main {
   padding: 3rem 0;
@@ -35,6 +43,7 @@ body {
   /*главный заголовок*/
 }
 .main-content h1 {
+  margin-top: 0;
   margin-bottom: 4rem;
   font-family: ProximaNova_bold, sans-serif;
   line-height: 1.45;
@@ -107,7 +116,8 @@ body {
   margin-top: 1.5rem;
 }
 .main .footer {
-  text-align-last: left;
+  text-align: center;
+  margin-top: 2rem;
 }
 .header {
   height: 7rem;
@@ -120,6 +130,12 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #fdc235;
 }
 .phone-block {
   text-align: right;
@@ -141,4 +157,37 @@ body {
   display: table-cell;
   vertical-align: middle;
   text-align: right;
+}
+@media (max-width: 991px) {
+  .main {
+    background-position: top right;
+  }
+  .phone-block {
+    text-align: center;
+  }
+  .main-title {
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+  .main-content {
+    margin-top: 3rem;
+  }
+  .footer {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    background-position: top left;
+  }
+  .header {
+    text-align: center;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
